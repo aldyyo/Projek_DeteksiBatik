@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <!-- Tailwind -->
+     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <style>
+          body { font-family: 'Source Sans Pro', sans-serif; }
+     </style>
+
+     <title>Batik Identification</title>
+</head>
+<body class="bg-gray-200">
+     <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
+          <!-- Sidebar -->
+          <div class="flex flex-col w-full md:w-64 text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0">
+            <div class="flex-shrink-0 px-8 py-4 flex flex-row items-center justify-between">
+               <p class="text-md font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+                   Batik Education
+               </p>
+            </div>
+            <hr class="mb-5">
+            <nav class="flex-grow md:block px-4 pb-4 md:pb-0 md:overflow-y-auto">
+                <a class="flex block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                         <path class="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd" />
+                         <path class="fill-current text-gray-300 group-hover:text-cyan-300" d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+                    </svg>
+                    <span class="ml-4">Home</span>
+               </a>
+               <a class="flex block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-100 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/batik">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                         <path class="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd" />
+                         <path class="fill-current text-gray-300 group-hover:text-cyan-300" d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+                    </svg>
+                    <span class="ml-4">Motif Batik</span>
+               </a>
+               <a class="flex block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/kampung">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                         <path class="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd" />
+                         <path class="fill-current text-gray-300 group-hover:text-cyan-300" d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+                    </svg>
+                    <span class="ml-4">Kampung Batik</span>
+               </a>
+               <a class="flex block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/artikel">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                         <path class="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd" />
+                         <path class="fill-current text-gray-300 group-hover:text-cyan-300" d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+                    </svg>
+                    <span class="ml-4">Artikel Berita</span>
+               </a>
+               <a class="flex block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="/deteksi">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                         <path class="fill-current text-gray-600 group-hover:text-cyan-600" d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
+                         <path class="fill-current text-gray-300 group-hover:text-cyan-300" d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
+                    </svg>
+                    <span class="ml-4">Model Prediction</span>
+               </a>
+            </nav>
+          </div>
+     
+          <!-- Content -->
+          <main class="min-h-screen w-full">
+               <div class="p-6 grid grid-cols-4 gap-5 top-1/2 left-1/2 mx-auto w-11/12 text-center">
+                    <div>
+                         <header class="mb-3 text-xl font-bold">Batik di Batam</header>
+                         
+                         <div class="w-full rounded-2xl bg-gray-50 h-56 border-2 border-dashed border-gray-400 rounded appearance-none focus:outline-none focus:shadow-outline">
+                              <div class="grid content-center h-full relative">
+                                   <img class="absolute object-cover h-full w-full rounded-2xl" src="./upload/sample/BatikBatam.png"/>
+                              </div>
+                         </div>
+                         
+                         <!-- <header class="text-xl font-bold">Select Model</header> -->
+                         <ul class="items-center w-full mt-4 text-sm font-medium text-gray-900 bg-white rounded-2xl border border-gray-300 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                   <div class="flex items-center">
+                                        <p class="py-4 px-4 w-full text-left font-medium text-gray-900 dark:text-gray-300">
+                                             <a>17 Juni 2023</a><br><br>
+                                             Melihat Geliat Perkembangan Pengrajin Batik di Batam.<br><br>
+                                             <a href="https://www.detik.com/sumut/berita/d-6778395/melihat-geliat-perkembangan-pengrajin-batik-di-batam" style="color: blue;">baca selengkapnya</a>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div>
+                         <header class="mb-3 text-xl font-bold">Mendadak Pakai Batik</header>
+                         
+                         <div class="w-full rounded-2xl bg-gray-50 h-56 border-2 border-dashed border-gray-400 rounded appearance-none focus:outline-none focus:shadow-outline">
+                              <div class="grid content-center h-full relative">
+                                   <img class="absolute object-cover h-full w-full rounded-2xl" src="./upload/sample/mendadakBatik.png"/>
+                              </div>
+                         </div>
+                         
+                         <!-- <header class="text-xl font-bold">Select Model</header> -->
+                         <ul class="items-center w-full mt-4 text-sm font-medium text-gray-900 bg-white rounded-2xl border border-gray-300 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                   <div class="flex items-center">
+                                        <p class="py-4 px-4 w-full text-left font-medium text-gray-900 dark:text-gray-300">
+                                             <a>18 Juni 2023</a><br><br>
+                                             Wasit Indonesia Open 2023 Mendadak Pakai Batik di Partai Final.<br><br>
+                                             <a href="https://www.inilah.com/wasit-indonesia-open-2023-mendadak-pakai-batik-saat-partai-final" style="color: blue;"> baca selengkapnya</a>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div>
+                         <header class="mb-3 text-xl font-bold">Batik dari Keprihatinan</header>
+                         
+                         <div class="w-full rounded-2xl bg-gray-50 h-56 border-2 border-dashed border-gray-400 rounded appearance-none focus:outline-none focus:shadow-outline">
+                              <div class="grid content-center h-full relative">
+                                   <img class="absolute object-cover h-full w-full rounded-2xl" src="./upload/sample/BatikKeprihatinan.png"/>
+                              </div>
+                         </div>
+                         
+                         <!-- <header class="text-xl font-bold">Select Model</header> -->
+                         <ul class="items-center w-full mt-4 text-sm font-medium text-gray-900 bg-white rounded-2xl border border-gray-300 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                   <div class="flex items-center">
+                                        <p class="py-4 px-4 w-full text-left font-medium text-gray-900 dark:text-gray-300">
+                                             <a>14 Juni 2023</a><br><br>
+                                             Motif Batik yang Berangkat dari Keprihatinan Ekploitasi Laut.<br><br>
+                                             <a href="https://edukasi.okezone.com/read/2023/06/14/624/2830685/keren-siswa-sd-di-gunungkidul-ciptakan-motif-batik-yang-berangkat-dari-keprihatinan-eksploitasi-laut" style="color: blue;">baca selengkapnya</a>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div>
+                         <header class="mb-3 text-xl font-bold">Batik di Semarang</header>
+                         
+                         <div class="w-full rounded-2xl bg-gray-50 h-56 border-2 border-dashed border-gray-400 rounded appearance-none focus:outline-none focus:shadow-outline">
+                              <div class="grid content-center h-full relative">
+                                   <img class="absolute object-cover h-full w-full rounded-2xl" src="./upload/sample/BatikSemarang.png"/>
+                              </div>
+                         </div>
+                         
+                         <!-- <header class="text-xl font-bold">Select Model</header> -->
+                         <ul class="items-center w-full mt-4 text-sm font-medium text-gray-900 bg-white rounded-2xl border border-gray-300 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                   <div class="flex items-center">
+                                        <p class="py-4 px-4 w-full text-left font-medium text-gray-900 dark:text-gray-300">
+                                             <a>29 Mei 2023</a><br><br>
+                                             Mengenal Batik Khas Semarang: Sejarah hingga Motifnya.<br><br>
+                                             <a href="https://www.detik.com/jateng/budaya/d-6744573/mengenal-batik-khas-semarang-sejarah-hingga-motifnya" style="color: blue;">baca selengkapnya</a>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div>
+                         <header class="mb-3 text-xl font-bold">Sambutan dengan Batik</header>
+                         
+                         <div class="w-full rounded-2xl bg-gray-50 h-56 border-2 border-dashed border-gray-400 rounded appearance-none focus:outline-none focus:shadow-outline">
+                              <div class="grid content-center h-full relative">
+                                   <img class="absolute object-cover h-full w-full rounded-2xl" src="./upload/sample/BatikTimnas.png"/>
+                              </div>
+                         </div>
+                         
+                         <!-- <header class="text-xl font-bold">Select Model</header> -->
+                         <ul class="items-center w-full mt-4 text-sm font-medium text-gray-900 bg-white rounded-2xl border border-gray-300 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                   <div class="flex items-center">
+                                        <p class="py-4 px-4 w-full text-left font-medium text-gray-900 dark:text-gray-300">
+                                             <a>17 Juni 2023</a><br><br>
+                                             Erick Thohir Kalungi Timnas Argentina dengan Kain Batik Timor.<br><br>
+                                             <a href="https://sumedang.suara.com/read/2023/06/17/125237/erick-thohir-kalungi-tim-argentina-dengan-kain-batik-timor-warganet-messi-pasti-nyesel-gak-ikut-ke-indonesia" style="color: blue;">baca selengkapnya</a>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div>
+                         <header class="mb-3 text-xl font-bold">Fashionable Batik</header>
+                         
+                         <div class="w-full rounded-2xl bg-gray-50 h-56 border-2 border-dashed border-gray-400 rounded appearance-none focus:outline-none focus:shadow-outline">
+                              <div class="grid content-center h-full relative">
+                                   <img class="absolute object-cover h-full w-full rounded-2xl" src="./upload/sample/FashinableBatik.png"/>
+                              </div>
+                         </div>
+                         
+                         <!-- <header class="text-xl font-bold">Select Model</header> -->
+                         <ul class="items-center w-full mt-4 text-sm font-medium text-gray-900 bg-white rounded-2xl border border-gray-300 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                   <div class="flex items-center">
+                                        <p class="py-4 px-4 w-full text-left font-medium text-gray-900 dark:text-gray-300">
+                                             <a>06 Juni 2023</a><br><br>
+                                             Fashonable! Inspirasi Tampilan Kulot Batik Modern 2023.<br><br>
+                                             <a href="https://soreang.suara.com/read/2023/06/06/140000/fahionable-inspirasi-tampilan-kulot-batik-modern-2023" style="color: blue;">baca selengkapnya</a>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div>
+                         <header class="mb-3 text-xl font-bold">Batik sebagai Warisan</header>
+                         
+                         <div class="w-full rounded-2xl bg-gray-50 h-56 border-2 border-dashed border-gray-400 rounded appearance-none focus:outline-none focus:shadow-outline">
+                              <div class="grid content-center h-full relative">
+                                   <img class="absolute object-cover h-full w-full rounded-2xl" src="./upload/sample/BatikWarisan.png"/>
+                              </div>
+                         </div>
+                         
+                         <!-- <header class="text-xl font-bold">Select Model</header> -->
+                         <ul class="items-center w-full mt-4 text-sm font-medium text-gray-900 bg-white rounded-2xl border border-gray-300 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                   <div class="flex items-center">
+                                        <p class="py-4 px-4 w-full text-left font-medium text-gray-900 dark:text-gray-300">
+                                             <a>02 Juni 2023</a><br><br>
+                                             Batik Sebagai Warisan Nusantara, Ajang Kreativitas Elegansi Modern.<br><br>
+                                             <a href="https://www.suara.com/pressrelease/2023/06/02/170500/batik-sebagai-warisan-nusantara-ajang-kreativitas-yang-mampu-pancarkan-elegansi-modern" style="color: blue;">baca selengkapnya</a>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    <div>
+                         <header class="mb-3 text-xl font-bold">Batik di Jambi</header>
+                         
+                         <div class="w-full rounded-2xl bg-gray-50 h-56 border-2 border-dashed border-gray-400 rounded appearance-none focus:outline-none focus:shadow-outline">
+                              <div class="grid content-center h-full relative">
+                                   <img class="absolute object-cover h-full w-full rounded-2xl" src="./upload/sample/BatikJambi.png"/>
+                              </div>
+                         </div>
+                         
+                         <!-- <header class="text-xl font-bold">Select Model</header> -->
+                         <ul class="items-center w-full mt-4 text-sm font-medium text-gray-900 bg-white rounded-2xl border border-gray-300 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                              <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                   <div class="flex items-center">
+                                        <p class="py-4 px-4 w-full text-left font-medium text-gray-900 dark:text-gray-300">
+                                             <a>11 April 2023</a><br><br>
+                                             Memaknai Arti Berbagai Motif Batik Khas Provinsi Jambi.<br><br>
+                                             <a href="https://yoursay.suara.com/ulasan/2023/04/11/195837/memaknai-arti-berbagai-motif-batik-khas-provinsi-jambi" style="color: blue;">baca selengkapnya</a>
+                                        </p>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+                    
+               </div>
+          </main>
+     </div>
+</body>
+</html>
